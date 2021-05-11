@@ -8,6 +8,7 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+/* For use in src/lib/core/theming/_palette.scss http://mcg.mbitson.com/#!?mcgpalette0=%233f51b5#%2F */
 $mat-custom-primary: (
   50: #e3f6f6,
   100: #b9e9e7,
