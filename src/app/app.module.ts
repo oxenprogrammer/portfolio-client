@@ -8,11 +8,13 @@ import { MaterialModule } from './material.module';
 import { ManagementModule } from './management/management.module';
 import { UserModule } from './user/user.module';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
