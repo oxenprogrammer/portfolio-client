@@ -8,11 +8,112 @@
 // Be sure that you only ever include this mixin once!
 @include mat-core();
 
+$mat-custom-primary: (
+  50: #e3f6f6,
+  100: #b9e9e7,
+  200: #8adad8,
+  300: #5bcbc8,
+  400: #38c0bc,
+  500: #15b5b0,
+  600: #12aea9,
+  700: #0fa5a0,
+  800: #0c9d97,
+  900: #068d87,
+  A100: #bafffb,
+  A200: #87fff8,
+  A400: #54fff6,
+  A700: #3bfff4,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$mat-custom-accent: (
+  50: #fef7f7,
+  100: #fdebec,
+  200: #fcdee0,
+  300: #fbd1d3,
+  400: #fac7c9,
+  500: #f9bdc0,
+  600: #f8b7ba,
+  700: #f7aeb2,
+  800: #f6a6aa,
+  900: #f5989c,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #ffffff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+/* For use in src/lib/core/theming/_palette.scss */
+$mat-custom-secondary: (
+  50: #fffcf3,
+  100: #fef8e0,
+  200: #fdf3cc,
+  300: #fceeb7,
+  400: #fceaa7,
+  500: #fbe698,
+  600: #fae390,
+  700: #fadf85,
+  800: #f9db7b,
+  900: #f8d56a,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #ffffff,
+  A700: #fffaeb,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$portfolio-client-primary: mat-palette($mat-indigo);
-$portfolio-client-accent: mat-palette($mat-pink, A200, A100, A400);
+$portfolio-client-primary: mat-palette($mat-custom-primary);
+$portfolio-client-accent: mat-palette($mat-custom-accent, 500, 700, 900);
 
 // The warn palette is optional (defaults to red).
 $portfolio-client-warn: mat-palette($mat-red);
@@ -43,6 +144,7 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  color: #323332;
 }
 #particles-js {
   position: absolute;
@@ -53,4 +155,7 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   z-index: -100;
+}
+.header-color {
+  color: #fbe698;
 }
