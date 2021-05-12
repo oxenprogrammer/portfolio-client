@@ -145,13 +145,14 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  color: #323332;
+  color: mat-color($mat-custom-secondary, 900);
 }
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: mat-color($mat-custom-secondary, 100);
+  background-color: #000;
+  // background-color: mat-color($mat-custom-secondary, 100);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
