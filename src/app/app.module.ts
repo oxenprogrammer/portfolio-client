@@ -10,9 +10,10 @@ import { NgModule } from '@angular/core';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UserModule } from './user/user.module';
 import { ProfileComponent } from './profile/profile.component';
+import { WorkComponent } from './work/work.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, PageNotFoundComponent, ProfileComponent],
+  declarations: [AppComponent, HomeComponent, PageNotFoundComponent, ProfileComponent, WorkComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
