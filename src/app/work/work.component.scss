@@ -68,6 +68,13 @@
     h3 {
       color: #15b5b0;
     }
+    .programming-languages {
+      display: inline;
+      white-space: nowrap;
+      .prog-image {
+        padding: 0 0.5rem;
+      }
+    }
     .btn-launch {
       background-color: #15b5b0;
       color: #f8d56a;
