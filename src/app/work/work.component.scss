@@ -1,6 +1,51 @@
 .work {
-  position: relative;
-  z-index: -5;
+  padding-top: 18rem;
+  @media all and (max-width: 599px) {
+    padding-top: 0;
+  }
+  .passageStops {
+    background-color: black;
+    mix-blend-mode: overlay;
+    width: 16.667%;
+    top: calc(1em + 3px);
+  }
+  #passage,
+  .passageStops {
+    height: 10px;
+  }
+  #passageWrapper,
+  .passageStops {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 1;
+  }
+  #passageWrapper {
+    background-color: #15b5b0;
+    height: 40px;
+    top: 0;
+    color: #f8d56a;
+  }
+
+  .passageStops:nth-child(4) {
+    margin-left: 16%;
+  }
+  .passageStops:nth-child(6) {
+    margin-left: 32.6%;
+  }
+  .passageStops:nth-child(8) {
+    margin-left: 48%;
+  }
+  .passageStops:nth-child(10) {
+    margin-left: 64%;
+  }
+  .passageStops:nth-child(12) {
+    margin-left: 80%;
+  }
+
+  .passageStops:nth-child(14) {
+    margin-left: 96%;
+  }
+
   .projects {
     background-color: rgba(255, 255, 255, 0.8);
     display: flex;
