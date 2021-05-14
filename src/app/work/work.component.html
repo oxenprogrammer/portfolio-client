@@ -1,0 +1,41 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="work">
+  <mat-card class="projects">
+    <div id="passageWrapper">
+      <strong>Projects</strong>
+      <div id="passage"><!-- scroll indicator bar --></div>
+    </div>
+
+    <mat-list *ngFor="let project of projects">
+      <mat-card class="project">
+        <img
+          mat-card-image
+          [src]="project.image"
+          alt="Slack Bot"
+          loading="lazy"
+        />
+        <h3 class="title">{{ project.title }}</h3>
+        <mat-card-content>
+          <p>
+            {{ project.desc }}
+          </p>
+        </mat-card-content>
+        <div
+          *ngFor="let language_image of project.languages"
+          class="programming-languages"
+        >
+          <img
+            height="35"
+            class="prog-image"
+            [src]="language_image"
+            alt="Ruby"
+          />
+        </div>
+        <mat-card-actions>
+          <a [href]="project.link" target="_blank" mat-button class="btn-launch"
+            >Launch</a
+          >
+        </mat-card-actions>
+      </mat-card>
+    </mat-list>
+  </mat-card>
+</div>

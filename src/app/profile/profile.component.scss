@@ -1,0 +1,53 @@
+.profile {
+  $color: #85d6d2;
+  $font: 400 1.4rem "Ubuntu";
+  position: fixed;
+  & > * {
+    padding-bottom: 0.8rem;
+  }
+  .profile-picture {
+    img {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      border-radius: 50%;
+      margin: auto;
+    }
+  }
+  .profile-name {
+    color: $color;
+    font: $font;
+    font-size: 1.8rem;
+  }
+  .profile-location {
+    color: $color;
+    font: $font;
+    font-size: 1rem;
+  }
+
+  .profile-skills {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .profile-connections .fa {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+
+  .fa-github {
+    color: red;
+  }
+  .fa-stack-overflow {
+    color: orange;
+  }
+  .fa-linkedin-square {
+    color: #0373ae;
+  }
+  .fa-twitter {
+    color: blue;
+  }
+
+  @media all and (max-width: 739px) {
+    position: static;
+  }
+}
