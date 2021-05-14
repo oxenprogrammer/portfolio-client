@@ -11,74 +11,80 @@ import { PortfolioService } from '../portfolio/portfolio.service';
 export class WorkComponent implements OnInit {
   projects: any;
   constructor(private portfolioService: PortfolioService) {
-    // this.projects = [
-    //   {
-    //     title: 'Slack Bot',
-    //     desc: 'Nerd Bot is a bot that serves a developer on Slack with random programming humors whenever they need to take a little break from code',
-    //     image: 'http://cio.ucop.edu/wp-content/uploads/2016/09/Slack-Bot.jpg',
-    //     language: [
-    //       'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png',
-    //       'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png',
-    //       'https://user-images.githubusercontent.com/819186/51553744-4130b580-1e7c-11e9-889e-486937b69475.png',
-    //     ],
-    //   },
-    //   {
-    //     title: 'Sudo Wear',
-    //     desc: 'Sudo Wear in a server e-commerce API for my developer T-Shirts business.',
-    //     image: 'https://www.surrealcms.com/uploads/nodejs-logo.png',
-    //     language: [
-    //       'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fnodejs-png-nodejs-icon-png-50-px-1600.png&f=1&nofb=1',
-    //       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F1600%2Fmongodb.png&f=1&nofb=1',
-    //       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fredis-2%2F1451%2FUntitled-2-512.png&f=1&nofb=1',
-    //     ],
-    //   },
-    //   {
-    //     title: 'Slack Bot',
-    //     desc: 'Nerd Bot is a bot that serves a developer on Slack with random programming humors whenever they need to take a little break from code',
-    //     image: 'http://cio.ucop.edu/wp-content/uploads/2016/09/Slack-Bot.jpg',
-    //     language: [
-    //       'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png',
-    //       'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png',
-    //       'https://user-images.githubusercontent.com/819186/51553744-4130b580-1e7c-11e9-889e-486937b69475.png',
-    //     ],
-    //   },
-    //   {
-    //     title: 'Sudo Wear',
-    //     desc: 'Sudo Wear in a server e-commerce API for my developer T-Shirts business.',
-    //     image: 'https://www.surrealcms.com/uploads/nodejs-logo.png',
-    //     language: [
-    //       'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fnodejs-png-nodejs-icon-png-50-px-1600.png&f=1&nofb=1',
-    //       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F1600%2Fmongodb.png&f=1&nofb=1',
-    //       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fredis-2%2F1451%2FUntitled-2-512.png&f=1&nofb=1',
-    //     ],
-    //   },
-    //   {
-    //     title: 'Slack Bot',
-    //     desc: 'Nerd Bot is a bot that serves a developer on Slack with random programming humors whenever they need to take a little break from code',
-    //     image: 'http://cio.ucop.edu/wp-content/uploads/2016/09/Slack-Bot.jpg',
-    //     language: [
-    //       'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/ruby/ruby.png',
-    //       'https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png',
-    //       'https://user-images.githubusercontent.com/819186/51553744-4130b580-1e7c-11e9-889e-486937b69475.png',
-    //     ],
-    //   },
-    //   {
-    //     title: 'Sudo Wear',
-    //     desc: 'Sudo Wear in a server e-commerce API for my developer T-Shirts business.',
-    //     image: 'https://www.surrealcms.com/uploads/nodejs-logo.png',
-    //     language: [
-    //       'https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fpluspng.com%2Fimg-png%2Fnodejs-png-nodejs-icon-png-50-px-1600.png&f=1&nofb=1',
-    //       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.icons8.com%2Fcolor%2F1600%2Fmongodb.png&f=1&nofb=1',
-    //       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn4.iconfinder.com%2Fdata%2Ficons%2Fredis-2%2F1451%2FUntitled-2-512.png&f=1&nofb=1',
-    //     ],
-    //   },
-    // ];
+    this.projects = [
+      {
+        title: 'clinicPesa',
+        desc: 'clinicPesa provides you with access to healthcare financing, that is more convenient and affordable than the traditional Insurance, through a digital micro-loans and savings platform for setting aside dedicated healthcare funds used to offset medical bills and purchase drugs in time of need at our registered clinic, hospital or pharmacy.',
+        image: './../../assets/img/clinicPesa.png',
+        languages: [
+          './../../assets/img/icons8-angularjs-48.png',
+          './../../assets/img/icons8-material-ui-48.png',
+        ],
+        link: 'https://test.clinicpesa.com/#/login',
+      },
+      {
+        title: 'Olympics Articles',
+        desc: 'Olympics Articles is a fictitious website where bloggers write articles on sports events.',
+        image: './../../assets/img/olympics.png',
+        languages: [
+          './../../assets/img/icons8-ruby-programming-language-48.png',
+          './../../assets/img/icons8-html-5-48.png',
+          './../../assets/img/icons8-css3-48.png',
+        ],
+        link: 'https://olym-m.herokuapp.com/',
+      },
+      {
+        title: 'Nerd Bot',
+        desc: 'Nerd Bot is a bot that serves a developer on Slack with random programming humors whenever they need to take a little break from code.',
+        image: './../../assets/img/Slack-Bot.jpg',
+        languages: [
+          './../../assets/img/icons8-ruby-programming-language-48.png',
+          './../../assets/img/icons8-slack-48.png',
+        ],
+        link: 'https://github.com/oxenprogrammer/nerd-bot',
+      },
+      {
+        title: 'My Backend Portfolio',
+        desc: 'I built this portfolio backend using NestJs TypeScript as a proof of concept on how easy it it to use TypeScript and a well organized framework that follows DRY and SOLID principles using MVC',
+        image: './../../assets/img/nestjs_logo.png',
+        languages: [
+          './../../assets/img/nest-logo.png',
+          './../../assets/img/icons8-nodejs-48.png',
+          './../../assets/img/icons8-typescript-48.png',
+          './../../assets/img/icons8-postgresql-48.png',
+          './../../assets/img/icons8-docker-48.png',
+        ],
+        link: 'https://github.com/oxenprogrammer/portfolio-server',
+      },
+      {
+        title: 'Sudo Wear',
+        desc: 'Sudo Wear is a NodeJs server e-commerce API for my developer T-Shirts business.',
+        image: './../../assets/img/nodejs.png',
+        languages: [
+          './../../assets/img/icons8-nodejs-48.png',
+          './../../assets/img/icons8-mongodb-48.png',
+          './../../assets/img/icons8-redis-48.png',
+        ],
+        link: 'https://github.com/oxenprogrammer/sudowear',
+      },
+      {
+        title: 'Afro Fashion',
+        desc: 'HTML & CSS Capstone Project is based on an online website for a an imaginary annual African fashion show in Kampala, Uganda. Built to demonstrate knowledge gained from the HTML and CSS3 module over the first 3 weeks of joining Microverse.',
+        image: './../../assets/img/afro-fashion.png',
+        languages: [
+          './../../assets/img/icons8-html-5-48.png',
+          './../../assets/img/icons8-css3-48.png',
+          './../../assets/img/icons8-bootstrap-48.png',
+        ],
+        link: 'https://oxenprogrammer.github.io/dev-conference/',
+      },
+    ];
   }
 
   ngOnInit(): void {
-    this.portfolioService.getProjects().subscribe((data) => {
-      console.log('projects', data);
-      return (this.projects = data);
-    });
+    // this.portfolioService.getProjects().subscribe((data) => {
+    //   console.log('projects', data);
+    //   return (this.projects = data);
+    // });
   }
 }

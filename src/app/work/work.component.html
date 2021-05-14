@@ -5,7 +5,7 @@
       <div id="passage"><!-- scroll indicator bar --></div>
     </div>
 
-    <mat-list *ngFor="let project of projects?.data">
+    <mat-list *ngFor="let project of projects">
       <mat-card class="project">
         <img
           mat-card-image
@@ -31,7 +31,9 @@
           />
         </div>
         <mat-card-actions>
-          <button mat-button class="btn-launch">Launch</button>
+          <a [href]="project.link" target="_blank" mat-button class="btn-launch"
+            >Launch</a
+          >
         </mat-card-actions>
       </mat-card>
     </mat-list>
